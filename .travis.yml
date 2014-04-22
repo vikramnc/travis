@@ -24,5 +24,3 @@ deploy:
   secret_access_key: IODgIVLnFfW64qMgrOi3422aK6YCHpEiiv5EJr6H
   bucket: vikram-test
 region: us-west-2
-  on:
-    repo: vikramnc/travis
