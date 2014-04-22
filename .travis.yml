@@ -33,3 +33,12 @@ script: phpunit --configuration phpunit_$DB.xml --coverage-text
 notifications:
   irc: "irc.freenode.org#yourfavouriteroomfortravis"
 ###
+after_success:
+deploy:
+  provider: s3
+  access_key_id: AKIAILHE4W3F4FJZQBXA
+  secret_access_key:
+    secure: L7ReHmjjWdaW68R5QZWhF7awltLspWPCeztQUItdDKbBGKECg03KZxNNPRdcYex5HSmygrS4BbPikNmceQ8fE/qKrdSLb6Fkshje8i3MHGCIpNWZ4xipJP3lExJ9dF+/VGU9qKAgra2njh0WT4oRJWbLhXUqB0lsX2CrgznaLms=
+  bucket: vikram-test
+
+####
